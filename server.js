@@ -29,7 +29,7 @@ app.listen(3000, function () {
 // app.js or server.js
 // connect Mongoose to your DB
 var mongoose = require(‘mongoose’);
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jamie-card-game');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jamiecardgame');
 
 const port = process.env.PORT || 3000;
 app.listen(port);
