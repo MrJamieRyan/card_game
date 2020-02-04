@@ -1,3 +1,4 @@
+const dotenv = require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
@@ -24,3 +25,11 @@ MongoClient.connect('mongodb://localhost:27017')
 app.listen(3000, function () {
   console.log(`Listening on port ${this.address().port}`)
 })
+
+// app.js or server.js
+// connect Mongoose to your DB
+var mongoose = require(‘mongoose’);
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jamie-card-game');
+
+const port = process.env.PORT || 3000;
+app.listen(port);
