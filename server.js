@@ -10,7 +10,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-MongoClient.connect('mongodb://localhost:27017')
+MongoClient.connect('mongodb://localhost/jamiecardgame')
   .then((client) => {
     const db = client.db('card_game')
     const playersCollection = db.collection('players')
