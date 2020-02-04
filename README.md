@@ -1,7 +1,19 @@
-Browser Game
+# client
 
-Create a browser game based on an existing card or dice game. Model and test the game logic and then display it in the browser for a user to interact with.
+## Project setup
+```
+npm install
+```
 
-Write your own MVP with some specific goals to be achieved based on the game you choose to model.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-You might use persistence to keep track of the state of the game or track scores/wins. Other extended features will depend on the game you choose.
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
